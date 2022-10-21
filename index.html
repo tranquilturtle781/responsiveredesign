@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Responsive Redesign
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,600,700,800,900' rel='stylesheet'>
+</head>
+<body>
+<div class="header">
+    <div id="title">RESPONSIVE REDESIGN</div>
+    <div id="q">How can we identify the usability issues of an existing interface and design a responsive website to address them?</div>
+</div>
+ <div class="main">
+    <div class="section">
+        <div class="sectitle">
+            THE ORIGINAL SITE
+        </div>
+        <div class="contents">
+            <div id="para">
+                <p>The site I chose to examine and redesign is the home page of the online store for Red Balloon Bookshop. I chose to analyze this webpage because it is affiliated with a book shop that was my absolute favorite store as a child, but the interface itself has some clear issues and is not particularly intuitive.</p>
+                <form action="https://www.redballoonbookshop.com/buy-books" target="_blank">
+                    <button type="submit" class="clicky" value="Visit Original Site"> VISIT ORIGINAL SITE</button>
+                </form>
+            </div>
+            <img id="og" src="imgs/og.png">
+        </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            IS IT USABLE?
+        </div>
+        <div>
+            We can evaluate the usability of a web page by using three key metrics: learnability, efficiency, and memorability. 
+            <ol>
+                <li><b>Learnability:</b> How difficult is the system to learn? Can a new user accomplish basic tasks easily?</li>
+                <li><b>Efficiency:</b> Can experienced users perform tasks quickly? Is a high level of productivity possible once a user is familiar with the system?</li>
+                <li><b>Memorability:</b> How quickly can users reestablish proficiency in the system after a period of not using it?</li>
+            </ol>
+            Using these metrics, I analyzed the original web page and identified the following key issues.<br><br>
+        </div>
+        <div class="contents" id="wrappy">
+            <div id="big" class="issue">
+                <b>MAIN PURPOSE-RELATED</b>
+                <ol>
+                    <li>The page is generally lacking a clear hierarchical structure that would make it more readable and easy to navigate.</li>
+                    <li>For a new or casual user who doesn't have a particular book in mind, this page is a bit intimidating. We can improve this by providing some browsing functionality.</li>
+                    <li>The "Buy Indie Online" section's layout and size detracts from the primary goal of this page, which is to find and order a book.</li>
+                </ol>
+            </div>
+            <div class="issue">
+                <b>EXTRANEOUS INFORMATION</b>
+                <ol>
+                    <li>The social media links detract from more significant key action options in the header.</li>
+                    <li>There is so much information given for each title in the pre-order section that it's tough to just skim the section.</li>
+                </ol>
+            </div>
+            <div class="issue">
+                <b>REDUNDANCY</b>
+                <ol>
+                    <li>The store hours are located in both the header and the footer, and the header is already very crowded.</li>
+                    <li>There are three search bars which all have the same function. However, the fact that there are three of them makes it seem like they should be used for different things.</li>
+
+                </ol>
+            </div>
+            <div class="issue">
+                <b>UNCLEAR STRUCTURE</b>
+                <ol>
+                    <li>In the header, the purpose of the search bar and the shopping cart is unclear, since the online shop is only a small part of the overall website.</li>
+                    <li>In the footer, the link to shop on kobo is very unintuitive.</li>
+                </ol>
+                <img src="imgs/kobo.png">
+            </div>
+            <div class="issue">
+                <b>NON-RESPONSIVE</b>
+                <ol>
+                    <li>When the width of the browser window is 
+                        decreased, the name of the shop and logo get cut off.</li>
+                </ol>
+                <img src="imgs/broken.png">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            EVALUATING ACCESSIBILITY
+        </div>
+        <div class="contents">
+            <div id="para3">
+                We can use the <a href="https://wave.webaim.org" target="_blank">Web Accessibility Evaluation Tool</a> to get a quick overview of possible accessibility concerns that a web page might have. After using this tool
+        on the original web page, a number of issues were identified. <br><br>
+        The majority of issues involved very low contrast. Although not every example of this seemed like a valid concern to me, the white text on the light blue 
+        header, as well as the very light grey links on the white background did lack sufficient contrast to be easily readable. Additionally, the tool 
+        identified numerous instances of missing or insufficient alternative text descriptions for images on the web page. Given that these tags are necessary for 
+        accessibility tools such as screen readers, I agree that this is a significant accessibility problem.
+            </div>
+            <div id="stacked">
+                <img src="imgs/errors.png">
+            <img src="imgs/error1.png">
+            <img src="imgs/error2.png">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            LOW-FIDELITY PROTOTYPES
+        </div>
+        After identifying all of the significant usability issues in the original web page, I created wireframes detailing a new design that addressed these issues. I created three wireframes: one for desktop, one for tablet, and one for phone.<br><br>
+        <div class="bigims">
+            <img id="proto1" src="imgs/locomp.png">
+            <img id="proto2" src="imgs/lotablet.png">
+            <img id="proto3" src="imgs/lophone.png">
+        </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            STYLE GUIDE
+        </div>
+        <div class="contents">
+            <img id="guide" src="imgs/style.png">
+            <div id="para2">
+                <p>Before transitioning into web development, I built a style guide that displays the main colors, typography, and interactive 
+                    components of the web page. The guide helps to ensure that styles and interactive elements stay consistent throughout the site in order to keep the user experience coherent.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            HIGH-FIDELITY PROTOTYPES
+        </div>
+        After deciding on key components and styles, I used Figma to create high-fidelity prototypes for the same three screen sizes 
+        as my low-fidelity wireframes. These prototypes contain annotations of key layout choices to make the designs easier to reproduce
+        using HTML/CSS.
+        <div class="bigims1">
+            <div class="ahh">
+                <div class="ah">
+                    DESKTOP
+                </div>
+                <div id="p4">
+                    <img id="proto4" src="imgs/hicomp.png">
+                </div>
+            </div>
+            <div class="ahh">
+                <div class="ah">
+                    TABLET
+                </div>
+                <div id="p5">
+                    <img id="proto5" src="imgs/hitab.png">
+                </div>
+            </div>
+        </div>
+        <div class="ahh">
+        <div class="ah">
+            PHONE
+        </div>
+        <div id="p6">
+            <img id="proto6" src="imgs/hiphone.png">
+        </div>
+    </div>
+    </div>
+    <div class="section">
+        <div class="sectitle">
+            THE REDESIGN
+        </div>
+        <p>
+            Using the final high-fidelity prototypes, I created a new page using HTML and CSS. Note: all buttons and navigational 
+            elements on the redesigned page are dummy elements, since I was only doing a single page redesign. Click the link below
+            to explore the page, and test its responsiveness by opening it on a phone, tablet, or desktop!
+        </p><br>
+        <div class="contents">
+            <img class="piece" src="imgs/1.png">
+            <img class="piece" src="imgs/2.png">
+            <img class="piece" src="imgs/3.png">
+        </div><br>
+        <div id="formwrap">
+            <form action="https://tranquilturtle781.github.io/redballoonredesign/" target="_blank">
+                <button type="submit" class="clicky" id="bigclick" value="Visit New Site"> VISIT REDESIGNED SITE</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
